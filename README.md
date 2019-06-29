@@ -1,3 +1,3 @@
 # frida-website
 
-A website for a Restaurant
+The website for the restaurant Frida, opening in Summer 2k19
