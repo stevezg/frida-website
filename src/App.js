@@ -1,25 +1,53 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button
+} from 'react-bootstrap'
+import { LinkContainer } from "react-router-bootstrap";
 
-import Menu from './Components/Menu'
-import Location from './Components/Location'
-import PhoneNumber from './Components/PhoneNumber'
-import Hours from './Components/Hours'
-import Header from './Components/Header'
-import NavbarComponent from './Components/NavbarComponent'
-import About from './Components/About'
-import Footer from './Components/Footer'
+import Routes from "./Routes";
+
 
 function App() {
   return (
     <div className="App">
-      <NavbarComponent />
-      <Header />
-      <Menu />
-      <Hours />
-      <Location />
-      <PhoneNumber />
+        <Navbar bg="light" expand="lg">
+          <LinkContainer to="/"><Navbar.Brand href="/">Frida</Navbar.Brand></LinkContainer>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <LinkContainer to="/menu">
+              <Nav.Link>Menu</Nav.Link></LinkContainer>
+              <Nav.Link href="/location"
+              >Location</Nav.Link>
+              <NavDropdown title="About" id="basic-nav-dropdown">
+                <LinkContainer to="/hours"><NavDropdown.Item>Hours</NavDropdown.Item></LinkContainer>
+                <LinkContainer to="/rico"><NavDropdown.Item>
+                  Who's Rico
+                </NavDropdown.Item></LinkContainer>
+                <NavDropdown.Divider />
+                <LinkContainer to="contact">
+                <NavDropdown.Item>
+                  Contact us
+                </NavDropdown.Item></LinkContainer>
+              </NavDropdown>
+            </Nav>
+            <Button
+            variant="outline-success"
+            >
+            <a href="tel:(970) 963-0579">(970) 963-0579</a></Button>
+          </Navbar.Collapse>
+        </Navbar>
+        <Routes/>
+
+        {/* <Header />
+        <Menu />
+        <Hours />
+        <Location />
+        <PhoneNumber /> */}
 
       {/* <About /> */}
       {/* <Footer /> */}

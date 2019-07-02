@@ -1,12 +1,16 @@
 import React from 'react'
+import "./Menu.css"
 
 export default class Menu extends React.Component {
   render() {
     return (
       <div>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style dangerouslySetInnerHTML={{__html: "\n\t\t\t.menu {\n\t\t\t\tmargin-bottom: 15px;\n\t\t\t\tmax-width: 1200px;\n    \t\t\tmargin: 0 auto;\n\t\t\t}\n\t\t\t.menu_restName {\n\t\t\t\ttext-align: center;\n    \t\t\tfont-size: 70px;\n    \t\t\tmargin-top: 0;\n\t\t\t}\n\t\t\t.menu_title {\n\t\t\t\ttext-align: center;\n\t\t\t}\n\t\t\t.menu_section {\n\t\t\t\tmargin-bottom: 30px;\n\t\t\t}\n\t\t\t.menu_section h3 {\n\t\t\t\tfont-style: italic;\n\t\t\t}\n\t\t\t.menu_item {\n\t\t\t\tmargin: 0 15px;\n\t\t\t\tposition: relative;\n\t\t\t}\n\t\t\t.menu_item h4 {\n\t\t\t\tmargin-bottom: 0px;\n\t\t\t}\n\t\t\t.price {\n\t\t\t\tdisplay: block;\n\t\t\t\tfloat: right;\n\t\t\t\tposition: absolute;\n\t\t\t\tbottom: 0px;\n\t\t\t\tright: 0;\n\t\t\t\tbackground-color: white;\n\t\t\t\tfont-weight: bold;\n\t\t\t}\n\t\t\t.description {\n\t\t\t\tmargin-top: 5px;\n\t\t\t\tfont-style: italic;\n\t\t\t\tbackground-color: white;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\tmax-width: 50%;\n\t\t\t}\n\t\t\thr {\n\t\t\t\tborder: none;\n    \t\t\tborder-top: 1px dotted black;\n    \t\t\tmargin-top: -20px;\n\t\t\t}\n\t\t\tfooter:not(.app-footer) {\n\t\t\t\ttext-align: center;\n    \t\t\tfont-size: 11px;\n\t\t\t\tfont-style: italic;\n\t\t\t}\n\t\t\t@media (max-width: 575px) {\n\t\t\t\t.menu_title {\n\t\t\t\t\ttext-align: center;\n\t\t\t\t\tfont-size: 30px;\n\t\t\t\t}\n\t\t\t\t.menu_section h3 {\n\t\t\t\t\ttext-align: center;\n    \t\t\t\tfont-size: 30px;\n\t\t\t\t}\n\t\t\t\t.menu_item {\n\t\t\t\t\ttext-align: center;\n\t\t\t\t}\n\t\t\t\t.price {\n\t\t\t\t\tfloat: none;\n\t\t\t\t\tposition: static;\n\t\t\t\t\tmargin-top: 15px;\n\t\t\t\t}\n\t\t\t\thr {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\t\t\t}\n\t\t" }} />
-        <section className="menu"><h1 className="menu_restName">Frida</h1><h2 className="menu_title">Authentic Mexican Food</h2><div className="menu_section menu_section_15616597773"><h3>Appetizers, Soups, and Salads</h3>
+        <section className="menu">
+
+          <h2 className="menu_title">Authentic Mexican Food</h2>
+          <div className="menu_section menu_section_15616597773">
+            <h3>Appetizers, Soups, and Salads</h3>
             <div className="menu_item menu_item_15616598575">
               <h4 className="name">Homeade Chips &amp; Salsa (refills)</h4>
               <span className="price">$1.50</span>
@@ -27,7 +31,7 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616599712">
               <h4 className="name">Guacomole</h4>
-              <span className="price">sm $4.95 / lg $7.95</span>
+              <span className="price">$4.95 / $7.95 (large)</span>
               <p className="description"></p>
               <hr />
             </div>
@@ -57,7 +61,7 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616601139">
               <h4 className="name">Shrimp Platter /  Botana de Mariscos	</h4>
-              <span className="price">sm $25.00 / lg $44.00</span>
+              <span className="price">sm $25.00 <br/>lg $44.00</span>
               <p className="description">Seafood Combination of Crab Legs, Octopus, Clams, Shrimp, Scallops and Oysters</p>
               <hr />
             </div>
@@ -75,12 +79,12 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616602505">
               <h4 className="name">Ceviche Boat / Barco de Ceviche</h4>
-              <span className="price">$13.25 (add Octopus for $2.00)</span>
-              <p className="description"></p>
+              <span className="price">$13.25</span>
+              <p className="description">(add Octopus for $2.00)</p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616602733">
-              <h4 className="name">Oysters (When Available) With our Special Sauce</h4>
+              <h4 className="name">Oysters w/ our Special Sauce</h4>
               <span className="price">six $9.50 /dozen $17.50</span>
               <p className="description"></p>
               <hr />
@@ -174,14 +178,14 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616609563">
               <h4 className="name">Camarones ala Diabla </h4>
-              <span className="price">$13.95 (add melted cheese for $1.50) </span>
-              <p className="description">Shrimp sautéed in a spicy sauce. Served with Vegetables, Rice, Beans, Salad &amp; Tortillas / Servidos con Arroz, Frijoles y Tortillas</p>
+              <span className="price">$13.95</span>
+              <p className="description">Shrimp sautéed in a spicy sauce. Served with Vegetables, Rice, Beans, Salad &amp; Tortillas / Servidos con Arroz, Frijoles y Tortillas. (add melted cheese for $1.50)</p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616609895">
               <h4 className="name">Camarones al Ajillo</h4>
-              <span className="price">$13.95 (add melted cheese for $1.50) </span>
-              <p className="description">Shrimp sautéed in Garlic and Bell Peppers. Served with Salad, Rice, Beans and Tortillas / servidos con Ensalada, Arroz, Frijoles y Tortillas</p>
+              <span className="price">$13.95</span>
+              <p className="description">Shrimp sautéed in Garlic and Bell Peppers. Served with Salad, Rice, Beans and Tortillas / servidos con Ensalada, Arroz, Frijoles y Tortillas. (add melted cheese for $1.50) </p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616610388">
@@ -204,8 +208,8 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616611581">
               <h4 className="name">Camarones Enchipotlados	</h4>
-              <span className="price">$13.95 (add melted cheese for $1.50)</span>
-              <p className="description">Sautéed in our special Chipotle Sauce with Bell Peppers. Served with Rice, Beans and Tortillas. </p>
+              <span className="price">$13.95 </span>
+              <p className="description">Sautéed in our special Chipotle Sauce with Bell Peppers. Served with Rice, Beans and Tortillas. (add melted cheese for $1.50)</p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616611884">
@@ -229,8 +233,8 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616612860">
               <h4 className="name">Camarones ala Diabla	 </h4>
-              <span className="price">(add melted cheese for $1.50) </span>
-              <p className="description"></p>
+              <span className="price">$8.99</span>
+              <p className="description">(add melted cheese for $1.50) </p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616614262">
@@ -316,8 +320,8 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616628447">
               <h4 className="name">All-American Hamburger with Fries	 </h4>
-              <span className="price">$7.95 - Add Cheese for .50¢. </span>
-              <p className="description">Lettuce, Tomato, Onion, 1000 Island, Mayo and Mustard. </p>
+              <span className="price">$7.95</span>
+              <p className="description">Lettuce, Tomato, Onion, 1000 Island, Mayo and Mustard. Add Cheese for .50¢</p>
               <hr />
             </div>
             <div className="menu_item menu_item_15616628427">
@@ -364,7 +368,7 @@ export default class Menu extends React.Component {
             </div>
             <div className="menu_item menu_item_15616630210">
               <h4 className="name">Smothered Burrito - Green chile / Chile Verde</h4>
-              <span className="price">12.25</span>
+              <span className="price">$12.25</span>
               <p className="description">Covered with Cheese and Salsa and served with Rice and Beans
                 Cualquier numero de Burrito con Queso y Salsa a la Salamandra. Todos incluyen Arroz y Frijoles</p>
               <hr />

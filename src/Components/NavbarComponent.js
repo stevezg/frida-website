@@ -33,10 +33,10 @@ export default class NavbarComponent extends Component {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Button
+            <div
             variant="outline-success"
             >
-            Call Us!</Button>
+            <a href="tel:(970) 963-0579">(970) 963-0579</a></div>
           </Navbar.Collapse>
         </Navbar>
       </div>
