@@ -38,7 +38,7 @@ function App() {
             <Button
             variant="outline-success"
             >
-            <a href="tel:(970) 963-0579">(970) 963-0579</a></Button>
+            <a className="call_us" href="tel:(970) 963-0579">Call Us!</a></Button>
           </Navbar.Collapse>
         </Navbar>
         <Routes/>
