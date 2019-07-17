@@ -1,3 +1,3 @@
-# frida-website
+# frida
 
-The website for the restaurant Frida, opening in Summer 2k19
+The website for Frida, a mexican restaurant opening in glenwood springs, co
